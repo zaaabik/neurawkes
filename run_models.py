@@ -1405,9 +1405,7 @@ def train_generalized_neural_hawkes_ctsm_time(
                 total_log_likelihood_type_predict / total_num_of_events, 4
             )
             log_dict['tracked']['train_rmse'] = round(
-                numpy.sqrt(
-                    total_square_errors / total_num_of_events
-                ), 8
+                total_square_errors / total_num_of_events, 8
             )
             log_dict['tracked']['train_error_rate'] = round(
                 total_num_of_errors / total_num_of_events, 4
@@ -1525,9 +1523,7 @@ def train_generalized_neural_hawkes_ctsm_time(
                     total_num_of_errors_dev / total_num_of_events_dev, 4
                 )
                 log_dict['tracked']['dev_rmse'] = round(
-                    numpy.sqrt(
-                        total_square_errors_dev / total_num_of_events_dev
-                    ), 8
+                    total_square_errors_dev / total_num_of_events_dev, 8
                 )
                 #
                 dev_end = time.time()
@@ -1809,9 +1805,7 @@ def train_generalized_neural_hawkes_ctsm_time_DevIncludedSetting(
                 total_log_likelihood_type_predict / total_num_of_events, 4
             )
             log_dict['tracked']['train_rmse'] = round(
-                numpy.sqrt(
-                    total_square_errors / total_num_of_events
-                ), 8
+                    total_square_errors / total_num_of_events, 8
             )
             log_dict['tracked']['train_error_rate'] = round(
                 total_num_of_errors / total_num_of_events, 4
@@ -1943,9 +1937,7 @@ def train_generalized_neural_hawkes_ctsm_time_DevIncludedSetting(
                     total_num_of_errors_dev / total_num_of_events_dev, 4
                 )
                 log_dict['tracked']['dev_rmse'] = round(
-                    numpy.sqrt(
-                        total_square_errors_dev / total_num_of_events_dev
-                    ), 8
+                    total_square_errors_dev / total_num_of_events_dev, 8
                 )
                 #
                 dev_end = time.time()

@@ -1420,7 +1420,7 @@ class NeuralHawkesCTLSTM(object):
         # Time
         diff_time = (
             target_time - time_prediction
-        )**2
+        )
         diff_time *= seq_mask
         self.square_errors = tensor.sum(diff_time)
         self.num_of_events = tensor.sum(seq_mask)
@@ -1623,7 +1623,7 @@ class NeuralHawkesCTLSTM(object):
         # Time
         diff_time = (
             target_time - time_prediction
-        )**2
+        )
         diff_time *= seq_mask
         self.square_errors = tensor.sum(diff_time)
         self.num_of_events = tensor.sum(seq_mask)
@@ -5330,7 +5330,7 @@ class NeuralHawkesAdaptiveBaseCTSM_time(object):
         # Time
         diff_time = (
             target_time - time_prediction
-        )**2
+        )
         diff_time *= seq_mask
         self.square_errors = tensor.sum(diff_time)
         #
@@ -6088,7 +6088,7 @@ class NeuralHawkesAdaptiveBaseCTSM_time_scale(object):
         # Time
         diff_time = (
             target_time - time_prediction
-        )**2
+        )
         diff_time *= seq_mask
         self.square_errors = tensor.sum(diff_time)
         self.num_of_events = tensor.sum(seq_mask)
@@ -6291,7 +6291,7 @@ class NeuralHawkesAdaptiveBaseCTSM_time_scale(object):
         # Time
         diff_time = (
             target_time - time_prediction
-        )**2
+        )
         diff_time *= seq_mask
         self.square_errors = tensor.sum(diff_time)
         self.num_of_events = tensor.sum(seq_mask)
@@ -7198,7 +7198,7 @@ class NeuralHawkesAdaptiveBaseCTSM_time_scale_r(object):
         # Time
         diff_time = (
             target_time - time_prediction
-        )**2
+        )
         diff_time *= seq_mask
         self.square_errors = tensor.sum(diff_time)
         self.num_of_events = tensor.sum(seq_mask)
@@ -7404,7 +7404,7 @@ class NeuralHawkesAdaptiveBaseCTSM_time_scale_r(object):
         # Time
         diff_time = (
             target_time - time_prediction
-        )**2
+        )
         diff_time *= seq_mask
         self.square_errors = tensor.sum(diff_time)
         self.num_of_events = tensor.sum(seq_mask)
