@@ -1418,7 +1418,7 @@ class NeuralHawkesCTLSTM(object):
         #
         #self.num_of_errors = tensor.sum(diff_type)
         # Time
-        diff_time = (
+        diff_time = tensor.abs_(
             target_time - time_prediction
         )
         diff_time *= seq_mask
@@ -1621,7 +1621,7 @@ class NeuralHawkesCTLSTM(object):
         )
         #
         # Time
-        diff_time = (
+        diff_time = tensor.abs_(
             target_time - time_prediction
         )
         diff_time *= seq_mask
@@ -5328,7 +5328,7 @@ class NeuralHawkesAdaptiveBaseCTSM_time(object):
         )
         self.num_of_errors = tensor.sum(diff_type)
         # Time
-        diff_time = (
+        diff_time = tensor.abs_(
             target_time - time_prediction
         )
         diff_time *= seq_mask
@@ -6086,7 +6086,7 @@ class NeuralHawkesAdaptiveBaseCTSM_time_scale(object):
         #
         #self.num_of_errors = tensor.sum(diff_type)
         # Time
-        diff_time = (
+        diff_time = tensor.abs_(
             target_time - time_prediction
         )
         diff_time *= seq_mask
@@ -6289,7 +6289,7 @@ class NeuralHawkesAdaptiveBaseCTSM_time_scale(object):
         )
         #
         # Time
-        diff_time = (
+        diff_time = tensor.abs_(
             target_time - time_prediction
         )
         diff_time *= seq_mask
@@ -7196,7 +7196,7 @@ class NeuralHawkesAdaptiveBaseCTSM_time_scale_r(object):
         #
         #self.num_of_errors = tensor.sum(diff_type)
         # Time
-        diff_time = (
+        diff_time = tensor.abs_(
             target_time - time_prediction
         )
         diff_time *= seq_mask
@@ -7402,7 +7402,7 @@ class NeuralHawkesAdaptiveBaseCTSM_time_scale_r(object):
         )
         #
         # Time
-        diff_time = (
+        diff_time = tensor.abs_(
             target_time - time_prediction
         )
         diff_time *= seq_mask
